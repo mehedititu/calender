@@ -1,0 +1,33 @@
+.calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.date {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+.day {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+    border-radius: 5px;
+    height: 60px;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prev-month, .next-month {
+    background-color: #ededed;
+}
